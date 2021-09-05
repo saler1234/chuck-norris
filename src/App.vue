@@ -1,7 +1,8 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Početna</router-link> |
+    <router-link to="/about">Kategorije</router-link> |
+    <router-link to="/search">Pretraga</router-link>
   </div>
   <router-view />
 </template>
