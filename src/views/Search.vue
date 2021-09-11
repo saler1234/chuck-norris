@@ -24,12 +24,12 @@ export default {
         const searchData = reactive({});
         const SearchJokes = () => {
             if (search.value != "") {
-                fetch(`https://api.chucknorris.io/jokes/search?query=${search.value}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        searchData.jokes = data.result;
-                        search.value = "";
-                    });
+              fetch(`https://api.chucknorris.io/jokes/search?query=${search.value}`)
+                  .then(response => response.json())
+                  .then(data => {
+                      searchData.jokes = data.result;
+                      search.value = "";
+                  });
             }
         }
         return {

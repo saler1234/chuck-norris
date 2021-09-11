@@ -1,8 +1,8 @@
 <template>
   <div id="nav">
-    <router-link to="/">Početna</router-link> |
-    <router-link to="/about">Kategorije</router-link> |
-    <router-link to="/search">Pretraga</router-link>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/categories">Categories</router-link> |
+    <router-link to="/search">Search</router-link>
   </div>
   <router-view />
 </template>
@@ -21,6 +21,7 @@
 }
 
 #nav a {
+  font-size: 24px;
   font-weight: bold;
   color: #2c3e50;
 }
